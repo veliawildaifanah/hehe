@@ -9,7 +9,7 @@
 				crossDomain : true,
 				contentType: "application/json",
 				success: function(data, status){
-					dataMahasiswa = JSON.parse(data)
+					dataMahasiswa = JSON..stringify(data.body)
 					$('#jsonTable').css("visibility", "visible").css("border", "1px solid green");
 					$('#jsonTableContent').html("");
 					var rows = "";
