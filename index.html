@@ -8,6 +8,9 @@
 				url : "https://71e31ks2v3.execute-api.ap-southeast-1.amazonaws.com/production",
 				crossDomain : true,
 				contentType: "application/json",
+				headers: {
+				    "Authorization": "eyJraWQiOiJ4cks3YWRuRmdZSGN5YmtQb045NU5rb015MytjZkQyeWtuNEdFeXBDOEIwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIzc2Y5NGcydjJoZW0wNGJtcTRsaDF2a2RtbyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicmRzLWFwaVwvcmRzLmdldCIsImF1dGhfdGltZSI6MTU3NTQyOTk5NCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX2VqYUNEQzI1WCIsImV4cCI6MTU3NTQzMzU5NCwiaWF0IjoxNTc1NDI5OTk0LCJ2ZXJzaW9uIjoyLCJqdGkiOiIzZjIwMTk5My00Yzc3LTRhMDMtYjU2ZS1hNWQwYWUzMThiNzkiLCJjbGllbnRfaWQiOiIzc2Y5NGcydjJoZW0wNGJtcTRsaDF2a2RtbyJ9.gSSu_F3QTE7EADVX0vNN_q3CigPKNwRt6TD3_FpVdu5-jIo86hr_9KS6nIW0-dD3l-sQCZEXvZmqwfLhC6Gt1FCv-2SgUA9zeyyShuiIpHdtSorqJ6RBBkKqWR7VSj3yCZbUJ0soEiJLFAUjIokh5uUJbaf5bcsyOM2ZoBSq6BgXqyXoMu-sNJAcCqVdux95G_IL2bPhDUi8Bxosk4rH_LH568upK-B-ARoJLZ6r51gsi6v1Az2BPithzg9Sob6e-vQXeWKO8h5mtuq5HIib4uUYCxcW1cdZjPPMRc8OdShvE4dHPeHj1Na8mmekjqQcL2BSH6ngBp5VTxM_ycE-BA"
+				},
 				success: function(data, status){
 					dataMahasiswa = JSON.parse(data.body)
 					$('#jsonTable').css("visibility", "visible").css("border", "1px solid green");
